@@ -1,0 +1,104 @@
+/* 전체 바디 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+/* 중앙 컨테이너 스타일 */
+.container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 스타일 */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+/* 섹션 스타일 */
+section {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+section h3 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+/* 가운데 정렬 */
+.center {
+  text-align: center;
+}
+
+/* 로그인 버튼 스타일 */
+.btn-login {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  padding: 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  vertical-align: top;
+}
+
+.btn-login:hover {
+  background: #0056b3;
+}
+
+/* HINT 버튼 스타일 */
+.btn-hint {
+  display: inline-block;
+  width: 200px;
+  height: 54px;
+  padding: 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  background: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  vertical-align: top;
+}
+
+.btn-hint:hover {
+  background: #218838;
+}
+
+/* 반응형 미디어 쿼리 */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
