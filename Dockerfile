@@ -1,4 +1,4 @@
-# Python 3.9 이미지를 베이스로 사용
+# Python 3.9 slim 이미지를 베이스로 사용
 FROM python:3.9-slim
 
 # 작업 디렉터리 설정
@@ -8,8 +8,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 소스코드 복사
-COPY app.py .
+# 전체 소스코드 복사
+COPY . .
 
 # 컨테이너 포트 노출
 EXPOSE 5000
