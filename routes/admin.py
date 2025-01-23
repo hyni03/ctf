@@ -1,7 +1,8 @@
 from flask import Blueprint, request, redirect, url_for, render_template
 from utils.jwt import verify_token
+from flask import current_app
 
-FLAG = "flag=\"ldULUFMR09SSVRITV9OT05FLUlTLURBTkdFUk9VUw==\""
+
 
 admin_bp = Blueprint("admin_bp", __name__)
 
@@ -20,4 +21,4 @@ def admin_panel():
         return "관리자 계정이 아닙니다.", 403
 
     # 관리자 페이지에서 FLAG 출력
-    return render_template("admin.html", flag=FLAG)
+    return render_template("admin.html", flag=current_app.config['FLAG'])
